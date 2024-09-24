@@ -21,14 +21,26 @@
     class="about" 
     :style="{ backgroundColor: defaultBackgroundColor, backgroundImage: currentBackgroundImage }"
   >
-    <h1 class="heading">About Me</h1>
     <div class="container">
-      <p>
-        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-      </p>
+      <div class="text">
+        <h2>Hi, my name is ...!</h2>
+        <p>
+          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+        </p>
+        <h2>Some of my favourite things:</h2>
+        <ul>
+          <li>Gaming</li>
+          <li>Coffee</li>
+          <li>Animals</li>
+        </ul>
+        <nav>
+          <RouterLink to="/experience">Next page</RouterLink>
+        </nav>
+      </div>
+      
       <div class="images">
         <img 
           src="../assets/images/gamesConsole.jfif" 
@@ -54,6 +66,18 @@
 </template>
 
 <style scoped>
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  ul {
+    margin-bottom: 15px;
+  }
+
   .images {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -86,6 +110,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    margin-top: 15px;
   }
 
   .about {
